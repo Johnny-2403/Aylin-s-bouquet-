@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Aylin's Bouquet</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #ffccd5, #ffb3c1);
+            color: #333;
+            padding: 20px;
+        }
+
+        header {
+            position: relative;
+            text-align: center;
+            background: url('https://raw.githubusercontent.com/Johnny-2403/Aylin-s-bouquet-/main/Bouquet_craft.png') no-repeat center/cover;
+            padding: 80px 0;
+            color: white;
+            font-size: 2em;
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4); /* Dark overlay for better text contrast */
+            z-index: 1;
+        }
+
+        header h1 {
+            position: relative;
+            z-index: 2;
+        }
+
+        nav {
+            text-align: center;
+            padding: 15px 0;
+            background-color: rgba(255, 105, 180, 0.9);
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #FFF0F5;
+        }
+
+        section {
+            background: linear-gradient(135deg, #ffdde1, #ff9aa2, #ff758f);
+            padding: 25px;
+            max-width: 900px;
+            margin: 20px auto;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .product, .addon {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 2px dashed #FF69B4;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .product:hover, .addon:hover {
+            transform: scale(1.05);
+            background-color: rgba(255, 182, 193, 0.5);
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .cta a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            background: #FF69B4;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .cta a:hover {
+            background: #FF1493;
+        }
+
+        footer {
+            text-align: center;
+            background-color: rgba(255, 105, 180, 0.9);
+            padding: 20px 0;
+            color: white;
+            font-size: 1em;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Our Services</h1>
+    </header>
+
+    <nav>
+        <a href="index.html#about">About Us</a>
+        <a href="index.html#gallery">Gallery</a>
+        <a href="services.html">Services</a>
+        <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <section>
+        <h2>What We Offer</h2>
+        <p>At Aylin's Bouquet, we provide exquisite bouquets tailored to your preferences, perfect for every occasion. Our roses are crafted from premium ribbon fabrics, designed to last beautifully over time.</p>
+
+        <h3>Products</h3>
+        <div class="product"><span>Single Rose</span><span>$5</span></div>
+        <div class="product"><span>4 Rose Bouquet</span><span>$15</span></div>
+        <div class="product"><span>7 Rose Bouquet</span><span>$25</span></div>
+        <div class="product"><span>12 Rose Bouquet</span><span>$35</span></div>
+        <div class="product"><span>25 Rose Bouquet</span><span>$60</span></div>
+        <div class="product"><span>60 Rose Bouquet</span><span>$85</span></div>
+        <div class="product"><span>80 Rose Bouquet</span><span>$100</span></div>
+        <div class="product"><span>100 Rose Bouquet</span><span>$150</span></div>
+        <p> ** 3 colors max, additional colors will cost extra **</p>
+        
+        <h3>Add-Ons</h3>
+        <div class="addon"><span>Lights on bouquet</span><span>$6</span></div>
+        <div class="addon"><span>Crown</span><span>$5</span></div>
+        <div class="addon"><span>Pins</span><span>$1</span></div>
+        <p>** The pricing for pins may vary depending on the complexity and number of elements in your design **</p>
+        <div class="addon"><span>Plush</span><span>Price varies</span></div>
+        <div class="addon"><span>Toppers(your image)</span><span>$5</span></div>
+        <div class="addon"><span>Double wrapped</span><span>$5</span></div>
+        <div class="addon"><span>Banner(Custom text)</span><span>$2</span></div>
+        <p>** Text colors are only available in gold or silver lettering **</p>
+        <div class="addon"><span>Bows on banner</span><span>$2</span></div>
+    </section>
+    
+    <section>
+        <h3>How To Order</h3>
+        <h4>Bouquet Type:</h4>
+        <p>Information on color, size, and Add-Ons (inspo pics are welcomed).</p>
+        <h4>Date & Pick Up Time:</h4>
+        <p>5 DAYS IN ADVANCE.</p>
+        <h4>Payment Type:</h4>
+        <p>We accept Cash, Zelle, and Cashapp.</p>
+        <p>** ALL SALES ARE FINAL, NO REFUNDS! **</p>
+        <div class="cta">
+            <p>Place your order today! <a href="index.html#contact">Contact Us</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Aylin's Bouquet. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
