@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aylin's Bouquet - Gallery</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #FFC0CB, #FFF0F5);
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            background: url('https://raw.githubusercontent.com/Johnny-2403/Aylin-s-bouquet-/main/Flower_bou.png') no-repeat center/cover;
+            padding: 60px 0;
+            color: white;
+            font-size: 2em;
+            text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        nav {
+            text-align: center;
+            padding: 10px 0;
+            background-color: rgba(255, 182, 193, 0.9);
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        .gallery-section {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            justify-content: center;
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .gallery-container img, .gallery-container video {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+
+        .gallery-container img:hover, .gallery-container video:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: rgba(255, 192, 203, 0.8);
+        }
+
+        .back-home {
+            display: block;
+            text-align: center;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #FF1493;
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            width: 150px;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            transition: background 0.3s;
+        }
+
+        .back-home:hover {
+            background-color: #FF69B4;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Aylin's Bouquet - Gallery</h1>
+        <p>Explore our stunning collection of bouquets and videos showcasing our craftsmanship.</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <section class="gallery-section">
+        <h2>Our Bouquets</h2>
+        <div class="gallery-container">
+            <!-- Images -->
+            <img src="https://raw.githubusercontent.com/Johnny-2403/Aylin-s-bouquet-/main/IMG_4031.png" alt="Bouquet 1">
+            <img src="https://raw.githubusercontent.com/Johnny-2403/Aylin-s-bouquet-/main/IMG_6820.png" alt="Bouquet 2">
+            <img src="https://raw.githubusercontent.com/Johnny-2403/Aylin-s-bouquet-/main/IMG_7179.png" alt="Bouquet 3">
+
+            <!-- Videos -->
+            <video controls>
+                <source src="https://example.com/video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video controls>
+                <source src="https://example.com/video2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <a href="index.html" class="back-home">Back to Home</a>
+
+    <footer>
+        <p>&copy; 2025 Aylin's Bouquet. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
