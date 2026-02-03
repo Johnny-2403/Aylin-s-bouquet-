@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aylin's Bouquet - Gallery</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #FFC0CB, #FFF0F5);
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            background: url('https://raw.githubusercontent.com/Johnny-2403/Aylin-s-bouquet-/main/Flower_bou.png') no-repeat center/cover;
+            padding: 60px 0;
+            color: white;
+            font-size: 2em;
+            text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        nav {
+            text-align: center;
+            padding: 10px 0;
+            background-color: rgba(255, 182, 193, 0.9);
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        .gallery-section {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            justify-content: center;
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .gallery-container img, .gallery-container video {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+
+        .gallery-container img:hover, .gallery-container video:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: rgba(255, 192, 203, 0.8);
+        }
+
+        .back-home {
+            display: block;
+            text-align: center;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #FF1493;
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            width: 150px;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            transition: background 0.3s;
+        }
+
+        .back-home:hover {
+            background-color: #FF69B4;
+        }
+
+        .language-switcher {
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        .language-button {
+            background-color: #FF1493;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            transition: all 0.3s;
+            display: inline-block;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        .language-button:hover {
+            background-color: #FF69B4;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+            transform: translateY(-2px);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="language-switcher">
+        <a href="#" onclick="changeLanguage('en')" class="language-button">English</a>
+        <a href="#" onclick="changeLanguage('es')" class="language-button">Español</a>
+    </div>
+
+    <header>
+        <h1 data-en="Aylin's Bouquet - Gallery" data-es="El Ramo de Aylin - Galería">Aylin's Bouquet - Gallery</h1>
+        <p data-en="Explore our stunning collection of bouquets and videos showcasing our craftsmanship." data-es="Explora nuestra impresionante colección de ramos y videos que muestran nuestra artesanía.">
+            Explore our stunning collection of bouquets and videos showcasing our craftsmanship.
+        </p>
+    </header>
+
+    <nav>
+        <a href="index.html" data-en="Home" data-es="Inicio">Home</a>
+        <a href="services.html" data-en="Services" data-es="Servicios">Services</a>
+        <a href="gallery.html" data-en="Gallery" data-es="Galería">Gallery</a>
+        <a href="index.html#contact" data-en="Contact" data-es="Contacto">Contact</a>
+    </nav>
+
+    <section class="gallery-section">
+        <h2 data-en="Our Bouquets" data-es="Nuestros Ramos">Our Bouquets</h2>       
+        <div class="gallery-container">
+            <!-- Images -->
+            <img src="https://raw.githubusercontent.com/Johnny-2403/Aylin-s-bouquet-/main/IMG_4031.png" alt="Bouquet 1">
+            <img src="https://raw.githubusercontent.com/Johnny-2403/Aylin-s-bouquet-/main/IMG_6820.png" alt="Bouquet 2">
+            <img src="https://raw.githubusercontent.com/Johnny-2403/Aylin-s-bouquet-/main/IMG_7179.png" alt="Bouquet 3">
+            <img src="https://raw.githubusercontent.com/Johnny-2403/Aylin-s-bouquet-/main/IMG_7182.png" alt="Bouquet 4">
+            <img src="https://raw.githubusercontent.com/Johnny-2403/Aylin-s-bouquet-/main/IMG_7381.png" alt="Bouquet 5">
+            <img src="https://raw.githubusercontent.com/Johnny-2403/Aylin-s-bouquet-/main/IMG_9157.png" alt="Bouquet 6">
+            <img src="https://raw.githubusercontent.com/Johnny-2403/Aylin-s-bouquet-/main/IMG_9163.png" alt="Bouquet 7">
+            <img src="https://raw.githubusercontent.com/Johnny-2403/Aylin-s-bouquet-/main/IMG_2246.jpeg" alt="Bouquet 8">
+            <img src="https://raw.githubusercontent.com/Johnny-2403/Aylin-s-bouquet-/main/IMG_2203.jpeg" alt="Bouquet 9">
+            <img src="https://raw.githubusercontent.com/Johnny-2403/Aylin-s-bouquet-/main/IMG_2109.jpeg" alt="Bouquet 10">
+            <img src="https://raw.githubusercontent.com/Johnny-2403/Aylin-s-bouquet-/main/IMG_1962.jpeg" alt="Bouquet 11">
+
+            <!-- Videos -->
+            <video controls poster="https://raw.githubusercontent.com/Johnny-2403/Aylin-s-bouquet-/main/video_thumb1.jpg.png">
+                <source src="https://github.com/Johnny-2403/Aylin-s-bouquet-/raw/main/video_.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video controls poster="https://raw.githubusercontent.com/Johnny-2403/Aylin-s-bouquet-/main/video_thumb2.jpg.png">
+                <source src="https://github.com/Johnny-2403/Aylin-s-bouquet-/raw/main/video_1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <a href="index.html" class="back-home" data-en="Back to Home" data-es="Volver al Inicio">Back to Home</a>
+
+    <footer>
+        <p>&copy; 2025 Aylin's Bouquet. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const lang = localStorage.getItem('language') || 'en';
+            changeLanguage(lang);
+        });
+
+        function changeLanguage(lang) {
+            localStorage.setItem('language', lang);
+            document.querySelectorAll('[data-en]').forEach(function (el) {
+                el.textContent = lang === 'en' ? el.getAttribute('data-en') : el.getAttribute('data-es');
+            });
+        }
+    </script>
+
+</body>
+</html>
+
