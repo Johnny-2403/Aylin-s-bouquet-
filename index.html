@@ -169,6 +169,76 @@
             box-shadow: 0 6px 12px rgba(0,0,0,0.4); /* Lift effect */
             transform: translateY(-2px); /* Lift on hover */
         }
+        .featured-product {
+          text-align: center;
+          padding: 40px 20px;
+          background: linear-gradient(to bottom, #fff0f5, #ffe4ec);
+          border-radius: 20px;
+          margin: 30px auto;
+          max-width: 1000px;
+        }
+        
+        .featured-product h2 {
+          font-size: 2em;
+          margin-bottom: 10px;
+        }
+        
+        .product-subtext {
+          font-size: 1.1em;
+          margin-bottom: 20px;
+        }
+        
+        .mini-product-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+          gap: 15px;
+          margin-bottom: 20px;
+        }
+        
+        .mini-product-grid img {
+          width: 100%;
+          border-radius: 14px;
+          box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+        
+        .price-box {
+          margin: 15px 0;
+          font-size: 1.4em;
+        }
+        
+        .old-price {
+          text-decoration: line-through;
+          color: #999;
+          margin-right: 10px;
+        }
+        
+        .new-price {
+          color: #ff1493;
+          font-weight: bold;
+        }
+        
+        .sale-tag {
+          display: block;
+          font-size: 0.9em;
+          color: #ff1493;
+          margin-top: 5px;
+        }
+        
+        .order-btn {
+          display: inline-block;
+          margin-top: 15px;
+          padding: 12px 24px;
+          background: #ff1493;
+          color: white;
+          text-decoration: none;
+          font-weight: bold;
+          border-radius: 30px;
+          box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+        }
+        
+        .order-btn:hover {
+          background: #ff69b4;
+        }
 
 </style>
 </head>
@@ -176,6 +246,30 @@
     <a href="services.html" class="promo-banner" data-en="🔥 25% OFF Flower Bouquets — Sale Ends February 7! 🔥" data-es="🔥 25% DE DESCUENTO — ¡La oferta termina el 7 de febrero! 🔥">
       🔥 25% OFF Flower Bouquets — Sale Ends February 7! 🔥
     </a>
+    
+    <section class="featured-product">
+      <h2>🌸 Mini Bouquet Charm</h2>
+      <p class="product-subtext">
+        A mini bouquet you can clip to your backpack, keys, or bag.
+        Perfect Valentine’s gift 💝
+      </p>
+    
+      <div class="mini-product-grid">
+        <img src="https://raw.githubusercontent.com/Johnny-2403/Aylin-s-bouquet-/main/reramp.png" alt="Mini bouquet on backpack">
+        <img src="https://raw.githubusercontent.com/Johnny-2403/Aylin-s-bouquet-/main/IMG_2387.jpeg" alt="Mini bouquet close-up">
+        <img src="https://raw.githubusercontent.com/Johnny-2403/Aylin-s-bouquet-/main/IMG_2374.jpeg" alt="Mini bouquet in car">
+      </div>
+    
+      <div class="price-box">
+        <span class="old-price">$15</span>
+        <span class="new-price">$10.50</span>
+        <span class="sale-tag">Valentine’s Special</span>
+      </div>
+    
+      <a href="services.html" class="order-btn">
+        Order Mini Bouquet
+      </a>
+    </section>
 
     <div class="language-switcher">
         <a href="#" onclick="changeLanguage('en')" class="language-button">English</a>
